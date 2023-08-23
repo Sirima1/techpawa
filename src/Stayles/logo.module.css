@@ -1,0 +1,28 @@
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-baseline;
+    top: 50px;
+    left: 0;
+    height: 100px;
+    font-weight: bolder;
+    font-size: x-large;
+    font:bolder;
+    color: white;
+
+    
+}
+
+@media (max-width: 750px) {
+    .logoContainer > h3{
+        font-size: 16px;
+    }
+    .logoContainer > h1{
+        font-size: 20px;
+    }
+    .logoContainer{
+        height: 90px;
+        width: 90px;
+    }
+}
