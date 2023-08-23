@@ -13,7 +13,7 @@ import ResetPass from './pages/resetPassword/researtPassword';
 import UsingEmail from './pages/resetPassword/resetUsingEmail';
 import Verification from './pages/resetPassword/verification';
 import NewPassword from './pages/resetPassword/newPassword';
-import GigPawa from './pages/gigPawa/gigPawa';
+import JobFeeds from './pages/gigPawa/jobFeeds';
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
       <Route path='/gigpawa' element={
         <NavBarLayout>
           <div className="App">
-             <GigPawa />
+             <JobFeeds />
             <Footer />
           </div>
           </NavBarLayout>
