@@ -6,7 +6,7 @@ import NavBarLayout from './component/navBar/layout';
 import LandingPage from './pages/landingPage/landingPage';
 import SignUpLandingPage from './pages/signUp/signUp';
 import Testing from './component/testing/texting';
-import Footer from './component/footer/footer';
+import Footer from './component/footer/footer' ;
 import CreateProfile from './pages/createProfile/CreateProfile';
 import LogIn from './pages/login/logIn';
 import ResetPass from './pages/resetPassword/researtPassword';
