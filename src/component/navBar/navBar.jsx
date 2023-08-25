@@ -6,7 +6,7 @@ import { BiMenu } from 'react-icons/bi'
 const NavBar = () => {
     
     return ( 
-        <div  className={`${ styles.navGenDiv } text-bold bg-blue-950 pt-0 white`}>
+        <div  className={`${ styles.navGenDiv } text-bold bg-blue-950 pt-0 white `}>
             <div className={ styles.navBarContainer }>
                 <div className={styles.logo}>
                     <Logo h={ 150 } w={ 170 } />
@@ -18,12 +18,13 @@ const NavBar = () => {
                 </div>
                 <div className={`${ styles.navLinks } text-white`}>
                     <NavLink className='text-white' to="/">Home</NavLink>
+                    <NavLink to="/Work">Find Work</NavLink>
+                    <NavLink to="/About">About Us</NavLink>
                     <NavLink to="/signup">SignUp</NavLink>
                     <NavLink to="/Login">Log In</NavLink>
                 </div>
             </div>
-            
-        </div>
+            </div> 
      );
 }
  

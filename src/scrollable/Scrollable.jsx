@@ -11,7 +11,7 @@ function Scrollable() {
   }, [width]);
   return (
    <div className='container'>
-   <motion.h4 className='text-bold text-2xl'
+   <motion.h4 className='font-bold text-2xl mt-[40px]'
    initial={{x:'-100vw'}}
     animate={{x:0}}
     transition={{
@@ -28,7 +28,7 @@ function Scrollable() {
    
       {imgs.map((image, index)=>{
         return(
-          <motion.div className='min-h-[40rem] min-w-[30rem] p-[40px] overflow-hidden' key={image}>
+          <motion.div className='min-h-[35rem] min-w-[25rem] p-[40px] overflow-hidden' key={image}>
           <img src={image} className='h-[100%] w-[100%] rounded-[2rem]' alt={index}  />  
           </motion.div>
         )

@@ -39,11 +39,11 @@ const Footer = () => {
       
         
                 <p>all rights reserved</p>
-                <p className='font-semibold text-xl mt-[75px] mb-[60px] '>powered by <em className='font-bold text-xl'>Arctic dev</em></p>
+                <p className='font-bold text-xl mt-[75px] mb-[60px] '>powered by <em className='font-bold text-2xl'>Arctic dev</em></p>
                 
                 
                 
-                <div className={styles.socialMediaHandles}>
+                <div className={`${styles.socialMediaHandles} mb-8`}>
                 <BiLogoFacebook style={ { width: "30px", color: "ButtonHighlight", borderRadius:"50%", padding:"8px" ,backgroundColor:"black" ,height: "30px"}}/>
                 <BiLogoInstagram style={{width: "30px", color: "ButtonHighlight", borderRadius:"50%", padding:"8px" ,backgroundColor:"black" ,height: "30px"}}/>
                 <BiLogoTwitter style={{width: "30px", color: "ButtonHighlight", borderRadius:"50%", padding:"8px" ,backgroundColor:"black" ,height: "30px"}}/>

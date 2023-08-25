@@ -14,6 +14,8 @@ import UsingEmail from './pages/resetPassword/resetUsingEmail';
 import Verification from './pages/resetPassword/verification';
 import NewPassword from './pages/resetPassword/newPassword';
 import JobFeeds from './pages/gigPawa/jobFeeds';
+import About from './component/navBar/About';
+import Work from './component/navBar/Work';
 
 
 function App() {
@@ -122,6 +124,24 @@ function App() {
             </div>
           </NavBarLayout>        
         } />
+        
+        <Route path='/Work' element={
+          <NavBarLayout>
+            <div className="App">
+               <Work />
+              <Footer />
+            </div>
+            </NavBarLayout>
+        } />
+        <Route path='/About' element={
+          <NavBarLayout>
+            <div className="App">
+               <About />
+              <Footer />
+            </div>
+            </NavBarLayout>
+        } />
+        
     </Routes>
     
   );

@@ -6,6 +6,7 @@ import Card from '../../component/card/card';
 import child from '../../assets/child.png';
 import Scrollable from '../../scrollable/Scrollable';
 import Introduction from '../../Introduction';
+import About from '../../component/navBar/About';
 
 
 
@@ -46,9 +47,9 @@ const LandingPage = () => {
   <div className='w-full flex flex-col items-center justify-center bg-white '>
     
     <div className='grid lg:grid-cols-3  mt-[90px] border-2 p-[90px] mx-[5px] gap-4'>
-      <h1 className='text-bold m-2 text-[30px] '>Explore  Freelancing with GigPawa! </h1>
+      <h1 className='text-bold m-2 text-[35px] '>Explore  Freelancing with GigPawa! </h1>
       
-      <p className='text-[18px]'> Elevate your skills, connect with clients, and savor the sweet taste of success in the world of freelancing. Join our vibrant community today and add a dash of excitement to your freelance journey!<motion.button whileInView={{ x: 20}} initial={{scale: 1}} transition={{type:"tween", duration: 1}} className={styles.getStatedBtn} onClick={ () => navigate('/signUp') }>Get Started </motion.button></p>
+      <p className='text-[18px]'> Elevate your skills, connect with clients, and savor the sweet taste of success in the world of freelancing. Join our vibrant community today and add a dash of excitement to your freelance journey!<motion.button whileInView={{ x: 20}} initial={{scale: 1}} transition={{type:"tween", duration: 1}} className={`${styles.getStatedBtn} p-4 flex mt-[30px] mb-[30px]`} onClick={ () => navigate('/signUp') }>Get Started </motion.button></p>
     <motion.div
     initial = {{ x:-100 }}
     whileInView = {{ x:0 }}
@@ -100,9 +101,10 @@ const LandingPage = () => {
 
    </div>
    <Introduction />
+   <About  />
         
          
-    <div className='text-dark font-sans mt-4 grid lg:grid-cols-3 mb-[90px] w-full flex-center m-4'>
+    <div className='text-dark font-sans grid lg:grid-cols-3 mb-[90px] w-full flex-center mx-3 px-4'>
       {
         jobSeeking.map( ( info ) => {
           return (
